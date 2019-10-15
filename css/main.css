@@ -1,0 +1,90 @@
+/* *{ border: 1px solid black} */
+body{
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    font-family: 'Cabin Sketch', cursive;
+}
+section{
+    background-image: url("../images/background3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 150%;
+    margin: 0% 5% 0% 5% ;
+    border: 0%
+
+}
+header{
+    font-size: 400%;
+    color: yellowgreen;
+    background-color: chocolate;
+    text-align: center;
+    margin: 7% 5% 0% 5%;
+}
+
+.images__list{
+    overflow: hidden;
+    background-image: url("../images/background3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 150%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 0% 5% 0% 5% ;
+    border: 0%
+
+}
+.play_button{
+    background-color: orangered;
+    background-position: center;
+    border: none;
+    border-right: 2px solid yellowgreen;
+    border-bottom: 2px solid yellowgreen;
+    display: block;
+    width: 100%; 
+   margin-right: 5px;
+
+}
+
+.play_button:hover{
+    opacity: 0.8;
+}
+footer{
+    font-size: 200%;
+    color: yellowgreen;
+    background-color: chocolate;
+    text-align: left;
+    margin: 0% 5% 0% 5%;
+    padding: 0% 0%;
+}
+ul{
+    list-style: none;
+}
+
+.red_button{
+    background-color: red;
+    border: none;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    
+} 
+div{
+    margin: 8% 10%;
+}
+.backhome{
+    font-size: 300%;
+    color: yellowgreen;
+    background-color: red;
+    text-align: center;
+    margin: 0%;
+    position: center;
+
+}
