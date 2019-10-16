@@ -111,25 +111,30 @@
         </aside>
     <p></p>
     <div class="button">
-        <ul>
-          <li><button id="home" class="backhome" onclick="backtoindex();">HOME</button> </li>
-          <li><button id="next" class="next" onclick="Nexthtml();">NEXT</button></li>
-          <li><button id="back" class="back" onclick="backhtml();">BACK</button></li>
-        </ul>
-        </div>
-  </section>
-
-<script>
-    function backtoindex(){
-      document.location.href = 'index.html';
-   }
-   function Nexthtml(){
-      document.location.href = 'image4.html';
-   }
-   function backhtml(){
-      document.location.href = 'image2.html';
-       }
-  </script>
+      <ul>
+        <li><button id="home" class="backhome" onclick="backtoindex();">HOME</button> </li>
+        <li><button id="inf" class="howplay" onclick="howplay();">HOW TO PLAY</button> </li>
+        <li><button id="next" class="next" onclick="Nexthtml();">NEXT</button></li>
+        <li><button id="back" class="back" onclick="backhtml();">BACK</button></li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+     <script>
+       function backtoindex(){
+         document.location.href = 'index.html';
+      }
+        function howplay( ){	 
+      Swal.fire(
+        'Click the first picture you want to move THEN click the second picture where you want to replace the first pictue'
+        );
+        }
+      function Nexthtml(){
+         document.location.href = 'image4.html';
+      }
+      function backhtml(){
+         document.location.href = 'image2.html';
+          }
+     </script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
   <script src="js/puzzle.js"></script>
   

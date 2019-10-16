@@ -113,7 +113,7 @@
     <div class="button">
 		<ul>
 			<li><button id="home" class="backhome" onclick="backtoindex();">HOME</button> </li>
-			<!-- <li><button id="inf" class="howplay" onclick="howplay();">HOW TO PLAY</button> </li> -->
+			<li><button id="inf" class="howplay" onclick="howplay();">HOW TO PLAY</button> </li>
 			<li><button id="next" class="next" onclick="Nexthtml();">NEXT</button></li>
 			<li><button id="back" class="back" onclick="backhtml();">BACK</button></li>
 		</ul>
@@ -123,9 +123,11 @@
 	   function backtoindex(){
        document.location.href = 'index.html';
 		}
-	    // function HOWPLAY( ){	 
-    
-	    // }
+	    function howplay( ){	 
+		Swal.fire(
+			'Click the first picture you want to move THEN click the second picture where you want to replace the first pictue'
+			);
+	    }
 		function Nexthtml(){
        document.location.href = 'image2.html';
 		}
