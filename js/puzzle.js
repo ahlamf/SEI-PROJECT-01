@@ -28,7 +28,7 @@ $(document).ready(function(){
 			setInterval(function(){ 
 				secs++ 
 			}, 1000);
-		}, 1000);
+		}, 2000);
 	});
 
 
