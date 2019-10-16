@@ -16,19 +16,23 @@ let imagesPuzzle = (function(){
         
        $imgGridItem.setAttribute ("src", imgPuzz[index])
        $imgGridItem.setAttribute("width", "100%" )
-       
+       $playItemConent.setAttribute('id' , index+1)
 
 
        $playItemConent.classList.add("play_button")
        
        $playItemConent.textContent ="PLAY"
-       $playItemConent.setAttribute('id' , index+1)
+       
 
       $gridItem.appendChild($imgGridItem)
       $buttonContainer.appendChild($playItemConent)
       $gridItem.appendChild($buttonContainer)
       $imagesList.appendChild($gridItem)
 
+
+      function displayHtml () {
+        document.location.href = 'image'+this.getAttribute('id')+'.html';
+      }
       $playItemConent.addEventListener("click",displayHtml );
      }
      }
@@ -41,9 +45,5 @@ let imagesPuzzle = (function(){
 
   imagesPuzzle.getALl()
 
-  function displayHtml () {
   
-   
-   document.location.href = 'image'+this.getAttribute('id')+'.html';
-  }
 

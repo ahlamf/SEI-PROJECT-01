@@ -8,78 +8,90 @@
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <style>
-       aside{
-	       width: 510px;
-	       height: 340px;
-	       margin: 0px 40% 0px 40px;
-           position: relative;
-           }
-      .images{
-	       width: 170px;
-	       height: 170px;
-	       position: absolute;
-	       z-index: 100;
-	       margin: 0% 5% 0% 5% ;
-	       }
-      #image-1{
-          top: 0;
-          left: 0;
-          background-image: url("images/image3/image3-1.jpg");
-	      background-repeat: no-repeat;
-	      background-position: center;
-          background-size: 100%;
-          }
-      #image-2{
-          top: 0;
-          left: 170px;
-          background-image: url("images/image3/image3-2.jpg");
-	      background-repeat: no-repeat;
-	      background-position: center;
-          background-size: 100%;
-          }
-      #image-3{
-          top: 0;
-          left: 170px;
-          background-image: url("images/image3/image3-3.jpg");
-	      background-repeat: no-repeat;
-	      background-position: center;
-          background-size: 100%;
-          }
-      #image-4{
-          top: 170px;
-          left: 0;
-          background-image: url("images/image3/image3-4.jpg");
-	      background-repeat: no-repeat;
-	      background-position: center;
-          background-size: 100%;
-          }
-      #image-5{
-          top: 170px;
-          left: 170px;
-          background-image: url("images/image3/image3-5.jpg");
-	      background-repeat: no-repeat;
-	      background-position: center;
-          background-size: 100%;
-          }
-      #image-6{
-          top: 170px;
-          left: 340px;
-          background-image: url("images/image3/image3-6.jpg");
-	      background-repeat: no-repeat;
-	      background-position: center;
-          background-size: 100%;
-          }  
-       p{
-          font-size: 50px;
-	      color: yellowgreen;
-          background-color: chocolate;
-	      margin: 20px auto;
-	      width: 900px;
-	      text-align: center;
-          }
-    
-        </style>
-      </head>
+  aside{
+	width: 550px;
+	height: 300px;
+	margin: auto;
+	position: relative;
+	border: 5px solid chocolate;
+	padding:80px 1px 8px 2px;
+	background-color: chocolate;
+	border-radius: 10px;
+  }
+  button:hover{
+	background-color: aliceblue;
+  }
+	p{
+	font-size: 50px;
+	color: yellowgreen;
+  background-color: chocolate;
+	margin: 50px 10px 0px 177px;
+	width: 900px;
+	border: 5px solid chocolate;
+	text-align: center;
+	border-radius: 5px;
+	}
+	li{ 
+  display:inline; 
+  padding: 0% 7%;
+	} 
+	.images{
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	z-index: 100;
+	margin: 5% 5% 5% 5% ;
+	}   
+  #image-1{
+  top: 0;
+  left: 0;
+  background-image: url("images/image3/image3-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 100%;
+  }
+  #image-2{
+  top: 0;
+  left: 170px;
+  background-image: url("images/image3/image3-2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 100%;
+  }
+  #image-3{
+  top: 0;
+  left: 170px;
+  background-image: url("images/image3/image3-3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 100%;
+  }
+  #image-4{
+  top: 170px;
+  left: 0;
+  background-image: url("images/image3/image3-4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 100%;
+  }
+  #image-5{
+  top: 170px;
+  left: 170px;
+  background-image: url("images/image3/image3-5.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 100%;
+  }
+  #image-6{
+  top: 170px;
+  left: 340px;
+  background-image: url("images/image3/image3-6.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 100%;
+  }  
+  </style>
+  </head>
 
 
 <body>
@@ -87,6 +99,7 @@
   <header>
     Puzzle Game
   </header>
+
   <section>
         <aside id="imagePuzzle">
                 <div class="images" id="image-1"></div>
@@ -96,28 +109,29 @@
                 <div class="images" id="image-5"></div>
                 <div class="images" id="image-6"></div>
         </aside>
-  
     <p></p>
-    <div>
-      <button id="home" class="backhome" onclick="backtoindex();">Home</button>
-  </div>
+    <div class="button">
+        <ul>
+          <li><button id="home" class="backhome" onclick="backtoindex();">HOME</button> </li>
+          <li><button id="next" class="next" onclick="Nexthtml();">NEXT</button></li>
+          <li><button id="back" class="back" onclick="backhtml();">BACK</button></li>
+        </ul>
+        </div>
   </section>
-  <footer>
-    <div class="footer">
-            <ul>
-                <li>Project One</li>
-                <li>Softwear Engineering immersive Course</li>
-                <li>by Ahlam Fallatah</li>
-            </ul>
-            <img class="GALogo" src = "images/GAcomp.png" alt = "General Assembly Logo" width="300" height="80">
-        </div>    
-</footer>
-   <script>
-        function backtoindex(){
-        document.location.href = 'index.html';
-         }
-    </script>
+
+<script>
+    function backtoindex(){
+      document.location.href = 'index.html';
+   }
+   function Nexthtml(){
+      document.location.href = 'image4.html';
+   }
+   function backhtml(){
+      document.location.href = 'image2.html';
+       }
+  </script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
   <script src="js/puzzle.js"></script>
+  
 </body>
 </html>

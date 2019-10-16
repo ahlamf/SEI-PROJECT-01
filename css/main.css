@@ -16,8 +16,7 @@ section{
     background-position: center;
     background-size: 150%;
     margin: 0% 5% 0% 5% ;
-    border: 0%
-
+    border: 0%;
 }
 header{
     font-size: 400%;
@@ -25,8 +24,10 @@ header{
     background-color: chocolate;
     text-align: center;
     margin: 7% 5% 0% 5%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 5px solid yellowgreen;
 }
-
 .images__list{
     overflow: hidden;
     background-image: url("../images/background3.png");
@@ -37,19 +38,22 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     margin: 0% 5% 0% 5% ;
-    border: 0%
-
+    padding:10px 50px 10px 10px;
+    border: 0%;
 }
 .play_button{
-    background-color: orangered;
-    background-position: center;
-    border: none;
-    display: block;
-    width: 100%; 
-   margin-right: 5px;
-
+    font-size: 300%;
+    color: yellowgreen;
+    background-color: red;
+    text-align: center;
+    margin: 2% 0% 2% 20%;
+    padding: 2% 20%;
+    position: center;
+    display: flex;
+    align-content: center;
+    border-radius: 50px;
+    border: 5px solid yellowgreen;
 }
-
 .play_button:hover{
     opacity: 0.8;
 }
@@ -67,28 +71,36 @@ footer{
 }
 ul{
     list-style: none;
+    margin: 0%;
 }
-
 .red_button{
     background-color: red;
     border: none;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     display: block;
     width: 100%;
-    
 } 
 div{
-    margin: 8% 10%;
-}
-.backhome{
+    margin: 20px;
+} 
+.backhome, .next, .back{
     font-size: 300%;
     color: yellowgreen;
     background-color: red;
     text-align: center;
-    margin: 0%;
+    margin: 0% 0% 2% 0%;
+    padding: 2%;
     position: center;
-
+    border-radius: 50px;
+    border: 5px solid yellowgreen;
+}
+img{
+    border: 10px solid orangered;
+    border-radius: 50px;
+}
+button:hover{
+	background-color: aliceblue;
 }
