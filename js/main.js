@@ -20,17 +20,16 @@ let imagesPuzzle = (function(){
 
 
        $playItemConent.classList.add("play_button")
-
+       
        $playItemConent.textContent ="PLAY"
+       $playItemConent.setAttribute('id' , index+1)
 
       $gridItem.appendChild($imgGridItem)
       $buttonContainer.appendChild($playItemConent)
       $gridItem.appendChild($buttonContainer)
       $imagesList.appendChild($gridItem)
 
-      $playItemConent.addEventListener("click", function(){
-        document.location.href = 'image1.html';
-    });
+      $playItemConent.addEventListener("click",displayHtml );
      }
      }
   
@@ -42,4 +41,9 @@ let imagesPuzzle = (function(){
 
   imagesPuzzle.getALl()
 
+  function displayHtml () {
+  
+   
+   document.location.href = 'image'+this.getAttribute('id')+'.html';
+  }
 

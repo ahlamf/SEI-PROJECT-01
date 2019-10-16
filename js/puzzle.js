@@ -7,17 +7,17 @@ $(document).ready(function(){
 	var leftPosFir = 0;
 	var topPosSec = 0;
 	var leftPosSec = 0;
-	var shuffle = Math.floor((Math.random() * 4) + 1);
+	var shuffle = Math.floor((Math.random() * 1) + 1);
 	var moves = 0;
 	var secs = 0;
 
 	function shuffleTiles(){
 		if(shuffle){
-			$('#image-1').css({top: 340, left: 680});
-			$('#image-2').css({top: 0, left: 680});
-			$('#image-3').css({top: 340, left: 340});
-			$('#image-4').css({top: 0, left: 340});
-			$('#image-5').css({top: 340, left: 0});
+			$('#image-1').css({top: 170, left: 340});
+			$('#image-2').css({top: 0, left: 340});
+			$('#image-3').css({top: 170, left: 170});
+			$('#image-4').css({top: 0, left: 170});
+			$('#image-5').css({top: 170, left: 0});
 			$('#image-6').css({top: 0, left: 0});
 		} 
 	}
@@ -56,11 +56,11 @@ $(document).ready(function(){
 			setTimeout(function(){
 				if(
 					$('#image-1').css('left') == '0px' && $('#image-1').css('top') == '0px' && 
-					$('#image-2').css('left') == '340px' && $('#image-2').css('top') == '0px' &&
-					$('#image-3').css('left') == '680px' && $('#image-3').css('top') == '0px' &&
-					$('#image-4').css('left') == '0px' && $('#image-4').css('top') == '340px' &&
-					$('#image-5').css('left') == '340px' && $('#image-5').css('top') == '340px' &&
-					$('#image-6').css('left') == '680px' && $('#image-6').css('top') == '340px' 
+					$('#image-2').css('left') == '170px' && $('#image-2').css('top') == '0px' &&
+					$('#image-3').css('left') == '340px' && $('#image-3').css('top') == '0px' &&
+					$('#image-4').css('left') == '0px' && $('#image-4').css('top') == '170px' &&
+					$('#image-5').css('left') == '170px' && $('#image-5').css('top') == '170px' &&
+					$('#image-6').css('left') == '340px' && $('#image-6').css('top') == '170px' 
 				){
 					$('p').text('GOOD JOB, YOU DID IT IN ' + secs + ' SECONDS WITH ' + moves + ' MOVES!!');
 					moves = 0;
