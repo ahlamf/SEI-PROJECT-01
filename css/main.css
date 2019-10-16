@@ -86,8 +86,8 @@ ul{
 div{
     margin: 20px;
 } 
-.backhome, .next, .back{
-    font-size: 300%;
+.backhome, .next, .back, .howplay{
+    font-size: 100%;
     color: yellowgreen;
     background-color: red;
     text-align: center;
