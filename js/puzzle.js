@@ -28,7 +28,7 @@ $(document).ready(function(){
 			setInterval(function(){ 
 				secs++ 
 			}, 1000);
-		}, 2000);
+		}, 3000);
 	});
 
 
@@ -65,7 +65,7 @@ $(document).ready(function(){
 					$('p').text('GOOD JOB, YOU DID IT IN ' + secs + ' SECONDS WITH ' + moves + ' MOVES!!');
 					moves = 0;
 				}
-			}, 1000);
+			}, 100);
 
 			moves++
 		}
